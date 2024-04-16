@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Rodolfo G Giordano" />
+    <title>Web Project Around The U.S.</title>
+    <link rel="stylesheet" href="./pages/index.css" />
+  </head>
+  <body class="page">
+    <header class="header">
+      <img
+        src="./images/logo.svg"
+        alt="Logo escrito around the U.S."
+        class="header__logo"
+      />
+    </header>
+
+    <main id="main">
+      <section class="profile">
+        <img
+          src="./images/img-profile-jc.jpg"
+          alt="Foto do Jacques-Yves Cousteau"
+          class="profile__image"
+        />
+        <div class="profile__info">
+          <h1 class="profile__name">Jacques Cousteau</h1>
+          <button class="profile__edit-button"></button>
+          <p class="profile__about">Explorador Oceanógrafo</p>
+        </div>
+        <button class="profile__add-button"></button>
+      </section>
+
+      <section class="popup">
+        <form action="#" class="popup__container">
+          <h2 class="popup__title">Editar perfil</h2>
+          <input
+            type="text"
+            class="popup__input popup__input_name"
+            placeholder="Nome"
+          />
+          <input
+            type="text"
+            class="popup__input popup__input_about"
+            placeholder="Sobre Mim"
+          />
+          <button class="popup__submit">Salvar</button>
+          <button class="popup__close"></button>
+        </form>
+      </section>
+
+      <section class="cards">
+        <div class="cards__card">
+          <img
+            src="./images/cards/card-1-yosemite-vale.jpg"
+            alt="Foto do Vale de Yosemite"
+            class="cards__image"
+          />
+          <label for="cards-1" class="cards__menu">
+            <input type="checkbox" class="cards__like" id="cards-1" />
+            <span class="cards__title">Vale de Yosemite</span>
+            <span class="cards__like-icon"></span>
+          </label>
+        </div>
+
+        <div class="cards__card">
+          <img
+            src="/images/cards/card-2-lago-louise.jpg"
+            alt="Foto do Lago Louise"
+            class="cards__image"
+          />
+          <label for="cards-2" class="cards__menu">
+            <input type="checkbox" class="cards__like" id="cards-2" />
+            <span class="cards__title">Lago Louise</span>
+            <span class="cards__like-icon"></span>
+          </label>
+        </div>
+
+        <div class="cards__card">
+          <img
+            src="./images/cards/card-3-montanhas-carecas.jpg"
+            alt="Foto das Montanhas Carecas"
+            class="cards__image"
+          />
+          <label for="cards-3" class="cards__menu">
+            <input type="checkbox" class="cards__like" id="cards-3" />
+            <span class="cards__title">Montanhas Carecas</span>
+            <span class="cards__like-icon"></span>
+          </label>
+        </div>
+
+        <div class="cards__card">
+          <img
+            src="./images/cards/card-4-latemar.jpg"
+            alt="Foto de Latemar"
+            class="cards__image"
+          />
+          <label for="cards-4" class="cards__menu">
+            <input type="checkbox" class="cards__like" id="cards-4" />
+            <span class="cards__title">Latemar</span>
+            <span class="cards__like-icon"></span>
+          </label>
+        </div>
+
+        <div class="cards__card">
+          <img
+            src="./images/cards/card-5-parque-nacional.jpg"
+            alt="Foto de um lago no Parque Nacional de Vanoisek"
+            class="cards__image"
+          />
+          <label for="cards-5" class="cards__menu">
+            <input type="checkbox" class="cards__like" id="cards-5" />
+            <span class="cards__title">Parque Nacional de Vanoisek</span>
+            <span class="cards__like-icon"></span>
+          </label>
+        </div>
+
+        <div class="cards__card">
+          <img
+            src="./images/cards/card-6-lago-di-braies.jpg"
+            alt="Foto do Lago di Braies"
+            class="cards__image"
+          />
+          <label for="cards-6" class="cards__menu">
+            <input type="checkbox" class="cards__like" id="cards-6" />
+            <span class="cards__title">Lago di Braies</span>
+            <span class="cards__like-icon"></span>
+          </label>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p class="footer__copyright">
+        &copy; 2024 Rodolfo G Giordano Around The U.S. ©
+      </p>
+    </footer>
+    <script src="./scripts/script.js"></script>
+  </body>
+</html>
